@@ -1,0 +1,17 @@
+{
+  "name": "doceria",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leandro Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "mysql2": "^3.9.2"
+  }
+}
