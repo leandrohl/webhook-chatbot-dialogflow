@@ -46,4 +46,16 @@ export default class doceDAO {
         }
         return listaDoces;
     }
+
+    async consultarPorNome(nomeDoce) {
+        const conexao = await conectar();
+        const sql = 'SELECT * FROM doce where descricao like ?';
+        const [registros] = await conexao.query(sql,['%'+nomeDoce+'%']);
+        let doce = null;
+        for (const registro of registros){
+            doce = new Doce(registro.id, registro.descricao, registro.preco, registro.urlImagem, registro.listaIngredientes);
+            break;
+        }
+        return doce;
+    }
 }

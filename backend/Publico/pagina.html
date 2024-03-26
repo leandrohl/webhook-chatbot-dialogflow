@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonho bom</title>
+    <style>
+        df-messenger {
+         --df-messenger-bot-message: #d5b082;
+         --df-messenger-button-titlebar-color: #7f562a;
+         --df-messenger-chat-background-color: #fafafa;
+         --df-messenger-font-color: white;
+         --df-messenger-send-icon: #7f562a;
+         --df-messenger-user-message: #7f562a;
+        }
+      </style>
+</head>
+<body>
+    <h1>Bem-vindo a nossa doceria!</h1>
+</body>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Doceria"
+  agent-id="f126c616-ae7f-4b18-b34a-b37529dd0657"
+  language-code="pt-br"
+  chat-icon="https://2d20-186-194-229-163.ngrok-free.app/icone.png"
+></df-messenger>
+</html>

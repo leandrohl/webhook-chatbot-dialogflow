@@ -80,4 +80,9 @@ export default class Doce {
         const doceDao = new DoceDAO();
         return await doceDao.consultar();
     }
+
+    async consultarPorNome(nomeDoce){
+        const doceDao = new DoceDAO();
+        return await doceDao.consultarPorNome(nomeDoce);
+    }
 }
